@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aaron\\Downloads\\CC31B-TeamGyatt-master\\CC31B-TeamGyatt\\CC31B-TeamGyatt.csproj": {}
+    "C:\\Users\\Aaron\\Documents\\School\\CC3\\test GAME\\CC31B-TeamGyatt\\CC31B-TeamGyatt.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aaron\\Downloads\\CC31B-TeamGyatt-master\\CC31B-TeamGyatt\\CC31B-TeamGyatt.csproj": {
+    "C:\\Users\\Aaron\\Documents\\School\\CC3\\test GAME\\CC31B-TeamGyatt\\CC31B-TeamGyatt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aaron\\Downloads\\CC31B-TeamGyatt-master\\CC31B-TeamGyatt\\CC31B-TeamGyatt.csproj",
+        "projectUniqueName": "C:\\Users\\Aaron\\Documents\\School\\CC3\\test GAME\\CC31B-TeamGyatt\\CC31B-TeamGyatt.csproj",
         "projectName": "CC31B-TeamGyatt",
-        "projectPath": "C:\\Users\\Aaron\\Downloads\\CC31B-TeamGyatt-master\\CC31B-TeamGyatt\\CC31B-TeamGyatt.csproj",
+        "projectPath": "C:\\Users\\Aaron\\Documents\\School\\CC3\\test GAME\\CC31B-TeamGyatt\\CC31B-TeamGyatt.csproj",
         "packagesPath": "C:\\Users\\Aaron\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aaron\\Downloads\\CC31B-TeamGyatt-master\\CC31B-TeamGyatt\\obj\\",
+        "outputPath": "C:\\Users\\Aaron\\Documents\\School\\CC3\\test GAME\\CC31B-TeamGyatt\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Aaron\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net7.0-windows7.0": {
             "targetAlias": "net7.0-windows",
             "projectReferences": {
-              "C:\\Users\\Aaron\\Downloads\\CC31B-TeamGyatt-master\\Engine\\Engine.csproj": {
-                "projectPath": "C:\\Users\\Aaron\\Downloads\\CC31B-TeamGyatt-master\\Engine\\Engine.csproj"
+              "C:\\Users\\Aaron\\Documents\\School\\CC3\\test GAME\\Engine\\Engine.csproj": {
+                "projectPath": "C:\\Users\\Aaron\\Documents\\School\\CC3\\test GAME\\Engine\\Engine.csproj"
               }
             }
           }
@@ -66,14 +66,14 @@
         }
       }
     },
-    "C:\\Users\\Aaron\\Downloads\\CC31B-TeamGyatt-master\\Engine\\Engine.csproj": {
+    "C:\\Users\\Aaron\\Documents\\School\\CC3\\test GAME\\Engine\\Engine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aaron\\Downloads\\CC31B-TeamGyatt-master\\Engine\\Engine.csproj",
+        "projectUniqueName": "C:\\Users\\Aaron\\Documents\\School\\CC3\\test GAME\\Engine\\Engine.csproj",
         "projectName": "Engine",
-        "projectPath": "C:\\Users\\Aaron\\Downloads\\CC31B-TeamGyatt-master\\Engine\\Engine.csproj",
+        "projectPath": "C:\\Users\\Aaron\\Documents\\School\\CC3\\test GAME\\Engine\\Engine.csproj",
         "packagesPath": "C:\\Users\\Aaron\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aaron\\Downloads\\CC31B-TeamGyatt-master\\Engine\\obj\\",
+        "outputPath": "C:\\Users\\Aaron\\Documents\\School\\CC3\\test GAME\\Engine\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Aaron\\AppData\\Roaming\\NuGet\\NuGet.Config",

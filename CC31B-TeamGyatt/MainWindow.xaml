@@ -110,7 +110,7 @@
                        HorizontalAlignment="Center"
                        Text="{Binding CurrentLocation.Description}"/>
             </Grid>
-            <Label Grid.Row="1" Grid.Column="0" Content="ENEMY" Background="DarkRed"/>
+            <Label Grid.Row="1" Grid.Column="0" Content="ENEMY" Background="Red"/>
         </Grid>
 
         <Label Grid.Row="2" Grid.Column="2" Content="NAVIGATION" Background="Beige"/>
