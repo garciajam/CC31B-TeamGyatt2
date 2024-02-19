@@ -61,7 +61,7 @@
             <Label Grid.Row="1" Grid.Column="0" Content="PLAYER" Background="CornflowerBlue"/>
         </Grid>
 
-        <Label Grid.Row="2" Grid.Column="0" Content="INVENTORY AND QUESTS" Background="RosyBrown"/>
+        <Label Grid.Row="2" Grid.Column="0" Content="OBJECTIVES" Background="RosyBrown"/>
 
         <Label Grid.Row="1" Grid.Column="1" Content="GAME MESSAGES" Background="Beige"/>
 
@@ -72,8 +72,8 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Label Grid.Row="0" Grid.Column="0" Content="ITEM IMAGE" Background="SaddleBrown"/>
-            <Label Grid.Row="0" Grid.Column="1" Content="ITEM BUTTONS" Background="BurlyWood"/>
+            <Label Grid.Row="0" Grid.Column="0" Content="ACTIONS" Background="SaddleBrown"/>
+            <Label Grid.Row="0" Grid.Column="1" Content="CONSUMABLES" Background="BurlyWood"/>
         </Grid>
 
         <!-- Location and Enemy information -->
@@ -110,7 +110,7 @@
                        HorizontalAlignment="Center"
                        Text="{Binding CurrentLocation.Description}"/>
             </Grid>
-            <Label Grid.Row="1" Grid.Column="0" Content="ENEMY" Background="DarkRed"/>
+            <Label Grid.Row="1" Grid.Column="0" Content="INTERACTIONS" Background="DarkRed"/>
         </Grid>
 
         <Label Grid.Row="2" Grid.Column="2" Content="NAVIGATION" Background="Beige"/>
