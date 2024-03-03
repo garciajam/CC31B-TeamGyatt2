@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -7,13 +7,29 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Images\Locations\home.jpg" />
+    <None Remove="Images\Locations\cavernsofshadows.png" />
+    <None Remove="Images\Locations\cityofancients.png" />
+    <None Remove="Images\Locations\crystallakeshore.png" />
+    <None Remove="Images\Locations\dragonspeak.png" />
+    <None Remove="Images\Locations\enchantedforest.png" />
+    <None Remove="Images\Locations\hauntedgraveyard.png" />
     <None Remove="Images\Locations\home.png" />
+    <None Remove="Images\Locations\player.png" />
+    <None Remove="Images\Locations\skywardsummit.png" />
+    <None Remove="Images\Locations\volcanicforge.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Images\Locations\home.jpg" />
+    <Resource Include="Images\Locations\cavernsofshadows.png" />
+    <Resource Include="Images\Locations\cityofancients.png" />
+    <Resource Include="Images\Locations\crystallakeshore.png" />
+    <Resource Include="Images\Locations\dragonspeak.png" />
+    <Resource Include="Images\Locations\enchantedforest.png" />
+    <Resource Include="Images\Locations\hauntedgraveyard.png" />
     <Resource Include="Images\Locations\home.png" />
+    <Resource Include="Images\Locations\player.png" />
+    <Resource Include="Images\Locations\skywardsummit.png" />
+    <Resource Include="Images\Locations\volcanicforge.png" />
   </ItemGroup>
 
 </Project>
