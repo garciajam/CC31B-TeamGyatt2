@@ -107,15 +107,15 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Border Grid.Row="0" Margin="1" BorderBrush="Gainsboro" BorderThickness="1"/>
-                <Border Grid.Row="1" Margin="1" BorderBrush="Gainsboro" BorderThickness="1"/>
-                <Border Grid.Row="2" Margin="1" BorderBrush="Gainsboro" BorderThickness="1"/>
-                <Border Grid.Row="0" Grid.Column="1" Margin="1" BorderBrush="Gainsboro" BorderThickness="1"/>
-                <Border Grid.Row="1" Grid.Column="1" Margin="1" BorderBrush="Gainsboro" BorderThickness="1"/>
-                <Border Grid.Row="2" Grid.Column="1" Margin="1" BorderBrush="Gainsboro" BorderThickness="1"/>
-                <Border Grid.Row="0" Grid.Column="3" Margin="1" BorderBrush="Gainsboro" BorderThickness="1"/>
-                <Border Grid.Row="1" Grid.Column="3" Margin="1" BorderBrush="Gainsboro" BorderThickness="1"/>
-                <Border Grid.Row="2" Grid.Column="3" Margin="1" BorderBrush="Gainsboro" BorderThickness="1"/>
+                <Border Grid.Row="0" Margin="1" BorderBrush="Black" BorderThickness="1"/>
+                <Border Grid.Row="1" Margin="1" BorderBrush="Black" BorderThickness="1"/>
+                <Border Grid.Row="2" Margin="1" BorderBrush="Black" BorderThickness="1"/>
+                <Border Grid.Row="0" Grid.Column="1" Margin="1" BorderBrush="Black" BorderThickness="1"/>
+                <Border Grid.Row="1" Grid.Column="1" Margin="1" BorderBrush="Black" BorderThickness="1"/>
+                <Border Grid.Row="2" Grid.Column="1" Margin="1" BorderBrush="Black" BorderThickness="1"/>
+                <Border Grid.Row="0" Grid.Column="3" Margin="1" BorderBrush="Black" BorderThickness="1"/>
+                <Border Grid.Row="1" Grid.Column="3" Margin="1" BorderBrush="Black" BorderThickness="1"/>
+                <Border Grid.Row="2" Grid.Column="3" Margin="1" BorderBrush="Black" BorderThickness="1"/>
 
 
             </Grid>
@@ -159,7 +159,8 @@
                        VerticalAlignment="Center"
                        
                        Text="{Binding CurrentLocation.Description}"
-                       TextWrapping="Wrap"/>
+                       TextWrapping="Wrap"
+                       TextAlignment="Center"/>
             </Grid>
             <Label Grid.Row="1" Grid.Column="0" Content="INTERACTIONS" FontFamily="Felix Titling" FontSize="15" FontWeight="Bold" Background="DarkRed"/>
             <Border Grid.Row="1" Grid.Column="0" Margin="1" BorderBrush="Black" BorderThickness="3"/>
