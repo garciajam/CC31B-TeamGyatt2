@@ -14,6 +14,7 @@
     <None Remove="Images\Locations\enchantedforest.png" />
     <None Remove="Images\Locations\hauntedgraveyard.png" />
     <None Remove="Images\Locations\home.png" />
+    <None Remove="Images\Locations\homebg.jpg" />
     <None Remove="Images\Locations\player.png" />
     <None Remove="Images\Locations\skywardsummit.png" />
     <None Remove="Images\Locations\volcanicforge.png" />
@@ -27,6 +28,7 @@
     <Resource Include="Images\Locations\enchantedforest.png" />
     <Resource Include="Images\Locations\hauntedgraveyard.png" />
     <Resource Include="Images\Locations\home.png" />
+    <Resource Include="Images\Locations\homebg.jpg" />
     <Resource Include="Images\Locations\player.png" />
     <Resource Include="Images\Locations\skywardsummit.png" />
     <Resource Include="Images\Locations\volcanicforge.png" />

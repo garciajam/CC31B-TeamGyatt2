@@ -9,7 +9,7 @@ namespace Engine.Models
     public class World
     {
         private List<Location> _locations = new List<Location>();
-        internal void AddLocation(int x, int y, string name, string desc, string imageName)
+        internal void AddLocation(int x, int y, string name, string desc, string imageName, string backgroundImage)
         {
             Location loc = new Location();
             loc.XCoordinate = x;
@@ -17,6 +17,7 @@ namespace Engine.Models
             loc.Name = name; 
             loc.Description = desc;
             loc.ImageName = imageName;
+            loc.BackgroundImage = backgroundImage;
 
             _locations.Add(loc);
         }
