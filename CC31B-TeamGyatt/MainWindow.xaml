@@ -63,7 +63,7 @@
                 
             </Grid>
 
-            <Label Grid.Row="1" Grid.Column="0" Content="PLAYER" FontFamily="Felix Titling" FontSize="15" FontWeight="Bold" Background="CornflowerBlue"/>
+            <Label Grid.Row="1" Grid.Column="0" Content="PLAYER" FontFamily="Felix Titling" FontSize="15" FontWeight="Bold" Background="BurlyWood"/>
             <Border Grid.Row="1" Grid.Column="0" Margin="1" BorderBrush="Black" BorderThickness="3"/>
 
 
@@ -72,7 +72,7 @@
         </Grid>
         <Label Grid.Row="1" Grid.Column="1" Background="Beige"/>
 
-        <Label Grid.Row="2" Grid.Column="0" Content="OBJECTIVES" FontFamily="Felix Titling" FontSize="15" FontWeight="Bold" Background="RosyBrown"/>
+        <Label Grid.Row="2" Grid.Column="0" Content="OBJECTIVES" FontFamily="Felix Titling" FontSize="15" FontWeight="Bold" Background="BurlyWood"/>
         <Border Grid.Row="2" Grid.Column="0" Margin="1" BorderBrush="Black" BorderThickness="3"/>
         <Image Grid.Row="1" Grid.Column="1"
                    Stretch="UniformToFill"
@@ -89,7 +89,7 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Label Grid.Row="0" Grid.Column="0" Content="ACTIONS" FontFamily="Felix Titling" FontSize="15" FontWeight="Bold" Background="SaddleBrown"/>
+            <Label Grid.Row="0" Grid.Column="0" Content="ACTIONS" FontFamily="Felix Titling" FontSize="15" FontWeight="Bold" Background="BurlyWood"/>
             <Border Grid.Row="0" Grid.Column="0" Margin="1" BorderBrush="Black" BorderThickness="3"/>
             <Label Grid.Row="0" Grid.Column="1" Content="CONSUMABLES" FontFamily="Felix Titling" FontSize="15" FontWeight="Bold" Background="BurlyWood"/>
             <Border Grid.Row="0" Grid.Column="1" Margin="1" BorderBrush="Black" BorderThickness="3"/>
@@ -122,7 +122,7 @@
         </Grid>
 
         <!-- Location and Enemy information -->
-        <Border Grid.Row="1" Grid.Column="2" Margin="1" BorderBrush="Black" BorderThickness="3"/>
+        <Border Grid.Row="1" Grid.Column="2" Margin="3" BorderBrush="Black" BorderThickness="3"/>
         <Grid Grid.Row="1" Grid.Column="2">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
@@ -131,14 +131,14 @@
 
             <!-- Location Information -->
                 
-                <Grid Grid.Row="0" Grid.Column="0" Background="Beige">
+                <Grid Grid.Row="0" Grid.Column="0" Background="BurlyWood">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
 
-            <Border Grid.Row="0" Margin="3" BorderBrush="Gainsboro" BorderThickness="1">
+            <Border Grid.Row="0" Margin="3" BorderBrush="Black" BorderThickness="1">
                 <TextBlock Grid.Row="0"
                    HorizontalAlignment="Center"
                    FontFamily="Felix Titling" FontSize="15" FontWeight="Bold"
@@ -162,11 +162,11 @@
                        TextWrapping="Wrap"
                        TextAlignment="Center"/>
             </Grid>
-            <Label Grid.Row="1" Grid.Column="0" Content="INTERACTIONS" FontFamily="Felix Titling" FontSize="15" FontWeight="Bold" Background="DarkRed"/>
+            <Label Grid.Row="1" Grid.Column="0" Content="INTERACTIONS" FontFamily="Felix Titling" FontSize="15" FontWeight="Bold" Background="BurlyWood"/>
             <Border Grid.Row="1" Grid.Column="0" Margin="1" BorderBrush="Black" BorderThickness="3"/>
         </Grid>
 
-        <Label Grid.Row="2" Grid.Column="2" Content="NAVIGATION" FontFamily="Felix Titling" FontSize="15" FontWeight="Bold" Background="Beige"/>
+        <Label Grid.Row="2" Grid.Column="2" Content="NAVIGATION" FontFamily="Felix Titling" FontSize="15" FontWeight="Bold" Background="BurlyWood"/>
         <Border Grid.Row="2" Grid.Column="2" Margin="1" BorderBrush="Black" BorderThickness="3"/>
         <Grid Grid.Row="2" Grid.Column="2">
             <Grid.RowDefinitions>
