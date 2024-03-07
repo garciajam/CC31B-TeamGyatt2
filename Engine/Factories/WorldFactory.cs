@@ -13,7 +13,7 @@ namespace Engine.Factories
         {
             World newWorld = new World();
 
-            newWorld.AddLocation(0,0, "Home", "A peaceful village where your journey begins", "pack://application:,,,/Engine;component/Images/Locations/home.png", "pack://application:,,,/Engine;component/Images/Locations/home.png");
+            newWorld.AddLocation(0,0, "Home", "A peaceful village where your journey begins", "pack://application:,,,/Engine;component/Images/Locations/home.png", "pack://application:,,,/Engine;component/Images/Locations/home2.png");
             newWorld.AddLocation(0, 1, "Enchanted Forest", "Dense woods filled with magical creatures", "pack://application:,,,/Engine;component/Images/Locations/enchantedforest.png", "pack://application:,,,/Engine;component/Images/Locations/enchantedforest2.png");
             newWorld.AddLocation(1, 1, "Caverns of Shadows", "A dark labyrinthine cave system", "pack://application:,,,/Engine;component/Images/Locations/cavernsofshadows.png", "pack://application:,,,/Engine;component/Images/Locations/cavernsofshadows2.png");
             newWorld.AddLocation(-1, 1, "Volcanic Forge", "Fiery landscape with rivers of lava", "pack://application:,,,/Engine;component/Images/Locations/volcanicforge.png", "pack://application:,,,/Engine;component/Images/Locations/volcanicforge2.png");

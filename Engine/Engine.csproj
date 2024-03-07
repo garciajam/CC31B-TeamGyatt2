@@ -20,7 +20,7 @@
     <None Remove="Images\Locations\hauntedgraveyard.png" />
     <None Remove="Images\Locations\hauntedgraveyard2.png" />
     <None Remove="Images\Locations\home.png" />
-    <None Remove="Images\Locations\homebg.jpg" />
+    <None Remove="Images\Locations\home2.png" />
     <None Remove="Images\Locations\player.png" />
     <None Remove="Images\Locations\skywardsummit.png" />
     <None Remove="Images\Locations\skywardsummit2.png" />
@@ -42,7 +42,7 @@
     <Resource Include="Images\Locations\hauntedgraveyard.png" />
     <Resource Include="Images\Locations\hauntedgraveyard2.png" />
     <Resource Include="Images\Locations\home.png" />
-    <Resource Include="Images\Locations\homebg.jpg" />
+    <Resource Include="Images\Locations\home2.png" />
     <Resource Include="Images\Locations\player.png" />
     <Resource Include="Images\Locations\skywardsummit.png" />
     <Resource Include="Images\Locations\skywardsummit2.png" />
