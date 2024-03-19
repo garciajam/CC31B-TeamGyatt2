@@ -7,6 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\Items\potion.png" />
+    <None Remove="Images\Items\stick.png" />
     <None Remove="Images\Locations\cavernsofshadows.png" />
     <None Remove="Images\Locations\cavernsofshadows2.png" />
     <None Remove="Images\Locations\cityofancients.png" />
@@ -29,6 +31,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Images\Items\potion.png" />
+    <Resource Include="Images\Items\stick.png" />
     <Resource Include="Images\Locations\cavernsofshadows.png" />
     <Resource Include="Images\Locations\cavernsofshadows2.png" />
     <Resource Include="Images\Locations\cityofancients.png" />

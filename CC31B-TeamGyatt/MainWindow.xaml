@@ -32,6 +32,8 @@
             </Grid.RowDefinitions>
 
             <!-- Player Stats-->
+            
+            
             <Border Grid.Row="0" Grid.Column="0" Margin="1" BorderBrush="Black" BorderThickness="3"/>
             <Grid Grid.Row="0" Grid.Column="0" Background="BurlyWOod">
                 <Grid.RowDefinitions>
@@ -64,6 +66,17 @@
             </Grid>
 
             <Label Grid.Row="1" Grid.Column="0" Content="PLAYER" FontFamily="Felix Titling" FontSize="15" FontWeight="Bold" Background="BurlyWood"/>
+            <Grid Grid.Row="1" Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="110"/>
+                    
+                </Grid.RowDefinitions>
+
+                <Border Grid.Row="0" Grid.Column="0" Margin="1" BorderBrush="Black" BorderThickness="3"/>
+
+
+            </Grid>
             <Border Grid.Row="1" Grid.Column="0" Margin="1" BorderBrush="Black" BorderThickness="3"/>
 
 
@@ -91,7 +104,7 @@
 
             <Label Grid.Row="0" Grid.Column="0" Content="ACTIONS" FontFamily="Felix Titling" FontSize="15" FontWeight="Bold" Background="BurlyWood"/>
             <Border Grid.Row="0" Grid.Column="0" Margin="1" BorderBrush="Black" BorderThickness="3"/>
-            <Label Grid.Row="0" Grid.Column="1" Content="CONSUMABLES" FontFamily="Felix Titling" FontSize="15" FontWeight="Bold" Background="BurlyWood"/>
+            <Label Grid.Row="0" Grid.Column="1" Content="ITEMS" FontFamily="Felix Titling" FontSize="15" FontWeight="Bold" Background="BurlyWood"/>
             <Border Grid.Row="0" Grid.Column="1" Margin="1" BorderBrush="Black" BorderThickness="3"/>
             
             
@@ -108,9 +121,22 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <Border Grid.Row="0" Margin="1" BorderBrush="Black" BorderThickness="1"/>
+                <Image Grid.Row="0"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Height="Auto"
+                   Width="Auto"
+                   Source="{Binding CurrentGameItem.ImageName}"/>
                 <Border Grid.Row="1" Margin="1" BorderBrush="Black" BorderThickness="1"/>
+                
                 <Border Grid.Row="2" Margin="1" BorderBrush="Black" BorderThickness="1"/>
                 <Border Grid.Row="0" Grid.Column="1" Margin="1" BorderBrush="Black" BorderThickness="1"/>
+                <Image Grid.Row="0" Grid.Column="1"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Height="Auto"
+                   Width="Auto"
+                   Source="{Binding CurrentGameItem2.ImageName}"/>
                 <Border Grid.Row="1" Grid.Column="1" Margin="1" BorderBrush="Black" BorderThickness="1"/>
                 <Border Grid.Row="2" Grid.Column="1" Margin="1" BorderBrush="Black" BorderThickness="1"/>
                 <Border Grid.Row="0" Grid.Column="3" Margin="1" BorderBrush="Black" BorderThickness="1"/>

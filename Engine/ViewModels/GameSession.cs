@@ -28,6 +28,10 @@ namespace Engine.ViewModels
             }
         }
 
+        public GameItem CurrentGameItem { get; set; }
+        public GameItem CurrentGameItem2 { get; set; }
+
+
         public World CurrentWorld { get; set; }
         public bool HasLocationToNorth
         {
@@ -64,6 +68,8 @@ namespace Engine.ViewModels
             CurrentPlayer = new Player {Name = "Jamal", Gold = 100, CharacterClass = "Fighter", HitPoints = 100, ExperiencePoints = 0, Level = 1 };
             CurrentWorld = WorldFactory.CreateWorld();
             CurrentLocation = CurrentWorld.LocationAt(0,0);
+            CurrentGameItem = ItemFactory.CreateGameItem(1001);
+            CurrentGameItem2 = ItemFactory.CreateGameItem(1002);
         }
 
         public void MoveNorth()
