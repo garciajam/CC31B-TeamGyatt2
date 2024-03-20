@@ -86,6 +86,7 @@
         <Label Grid.Row="1" Grid.Column="1" Background="Beige"/>
 
         <Label Grid.Row="2" Grid.Column="0" Content="OBJECTIVES" FontFamily="Felix Titling" FontSize="15" FontWeight="Bold" Background="BurlyWood"/>
+
         <Border Grid.Row="2" Grid.Column="0" Margin="1" BorderBrush="Black" BorderThickness="3"/>
         <Image Grid.Row="1" Grid.Column="1"
                    Stretch="UniformToFill"
@@ -137,6 +138,7 @@
                    Height="Auto"
                    Width="Auto"
                    Source="{Binding CurrentGameItem2.ImageName}"/>
+                
                 <Border Grid.Row="1" Grid.Column="1" Margin="1" BorderBrush="Black" BorderThickness="1"/>
                 <Border Grid.Row="2" Grid.Column="1" Margin="1" BorderBrush="Black" BorderThickness="1"/>
                 <Border Grid.Row="0" Grid.Column="3" Margin="1" BorderBrush="Black" BorderThickness="1"/>

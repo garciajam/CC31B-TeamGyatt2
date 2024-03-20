@@ -14,19 +14,16 @@ namespace Engine.Factories
         {
             s_GameItems = new List<GameItem>();
             s_GameItems.Add(new Weapon(1001, "Stick", 100, "pack://application:,,,/Engine;component/Images/Items/stick.png", 1, 2));
-            s_GameItems.Add(new GameItem(1002, "Potion", 100, "pack://application:,,,/Engine;component/Images/Items/potion.png"));
+            s_GameItems.Add(new GameItem(2001, "Potion", 100, "pack://application:,,,/Engine;component/Images/Items/potion.png"));
 
         }
 
         internal static GameItem CreateGameItem(int itemTypeID)
         {
-            foreach (GameItem item in s_GameItems)
+            GameItem item = s_GameItems.FirstOrDefault(item => item.ItemTypeID == itemTypeID);
+            if (item != null)
             {
-                if (item.ItemTypeID == itemTypeID)
-                {
-                    return item.Clone();
-                }
-                
+                return item.Clone();
             }
             return null;
         }
