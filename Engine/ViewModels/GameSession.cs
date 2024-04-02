@@ -25,6 +25,8 @@ namespace Engine.ViewModels
                 OnPropertyChanged(nameof(HasLocationToSouth));
                 OnPropertyChanged(nameof(HasLocationToEast));
                 OnPropertyChanged(nameof(HasLocationToWest));
+
+                GivePlayerQuestsAtLocation();
             }
         }
 
@@ -68,7 +70,7 @@ namespace Engine.ViewModels
         {
             CurrentPlayer = new Player {Name = "Jamal", Gold = 100, CharacterClass = "Fighter", HitPoints = 100, ExperiencePoints = 0, Level = 1 };
             CurrentWorld = WorldFactory.CreateWorld();
-            CurrentLocation = CurrentWorld.LocationAt(0,0);
+            CurrentLocation = CurrentWorld.LocationAt(0, 0);
             //CurrentGameItem = ItemFactory.CreateGameItem(1001);
             //CurrentGameItem2 = ItemFactory.CreateGameItem(2001);
         }
@@ -104,5 +106,18 @@ namespace Engine.ViewModels
                 CurrentLocation = CurrentWorld.LocationAt(CurrentLocation.XCoordinate, CurrentLocation.YCoordinate - 1);
             }
         }
+
+        private void GivePlayerQuestsAtLocation()
+        {
+            foreach (Quest quest in CurrentLocation.QuestsAvailableHere)
+            {
+                if (!CurrentPlayer.Quests.Any(q => q.PlayerQuest.Id == quest.Id))
+                {
+                    CurrentPlayer.Quests.Add(new QuestStatus(quest));
+                }
+            }
+        }
+
+
     }
 }

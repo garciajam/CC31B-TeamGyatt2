@@ -32,8 +32,8 @@
             </Grid.RowDefinitions>
 
             <!-- Player Stats-->
-            
-            
+
+
             <Border Grid.Row="0" Grid.Column="0" Margin="1" BorderBrush="Black" BorderThickness="3"/>
             <Grid Grid.Row="0" Grid.Column="0" Background="BurlyWOod">
                 <Grid.RowDefinitions>
@@ -43,13 +43,13 @@
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
-                    
+
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                
+
                 <Label Grid.Row="0" Grid.Column="0" FontFamily="Felix Titling" FontSize="15" FontWeight="Bold" Content="Name:"/>
                 <Label Grid.Row="1" Grid.Column="0" FontFamily="Felix Titling" FontSize="15" FontWeight="Bold" Content="Class:"/>
                 <Label Grid.Row="2" Grid.Column="0" FontFamily="Felix Titling" FontSize="15" FontWeight="Bold" Content="Hit Points:"/>
@@ -62,7 +62,7 @@
                 <Label Grid.Row="3" Grid.Column="1" FontFamily="Felix Titling" FontSize="15" Content="{Binding CurrentPlayer.ExperiencePoints}"/>
                 <Label Grid.Row="4" Grid.Column="1" FontFamily="Felix Titling" FontSize="15" Content="{Binding CurrentPlayer.Level}"/>
                 <Label Grid.Row="5" Grid.Column="1" FontFamily="Felix Titling" FontSize="15" Content="{Binding CurrentPlayer.Gold}"/>
-                
+
             </Grid>
 
             <Label Grid.Row="1" Grid.Column="0" Content="PLAYER" FontFamily="Felix Titling" FontSize="15" FontWeight="Bold" Background="BurlyWood"/>
@@ -70,7 +70,7 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="110"/>
-                    
+
                 </Grid.RowDefinitions>
 
                 <Border Grid.Row="0" Grid.Column="0" Margin="1" BorderBrush="Black" BorderThickness="3"/>
@@ -85,7 +85,42 @@
         </Grid>
         <Label Grid.Row="1" Grid.Column="1" Background="Beige"/>
 
-        <Label Grid.Row="2" Grid.Column="0" Content="OBJECTIVES" FontFamily="Felix Titling" FontSize="15" FontWeight="Bold" Background="BurlyWood"/>
+        <Grid Grid.Row="2" Grid.Column="0"
+              Background="BurlyWood">
+
+            <TabControl>
+                <TabItem Header="Inventory" Opacity="1" Background="BurlyWood">
+                    <DataGrid ItemsSource="{Binding CurrentPlayer.Inventory}"
+                              AutoGenerateColumns="False"
+                              HeadersVisibility="Column"
+                              Background="BurlyWood">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Description"
+                                                Binding="{Binding Name}"
+                                                Width="*"/>
+
+                            <DataGridTextColumn Header="Price"
+                                                Binding="{Binding Price}"
+                                                Width="Auto"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </TabItem>
+                <TabItem Header="Quests">
+                    <DataGrid ItemsSource="{Binding CurrentPlayer.Quests}"
+                              AutoGenerateColumns="False"
+                              HeadersVisibility="Column">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Name"
+                                                Binding="{Binding PlayerQuest.Name}"
+                                                Width="*"/>
+                            <DataGridTextColumn Header="Done?"
+                                                Binding="{Binding IsCompleted}"
+                                                Width="Auto"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </TabItem>
+            </TabControl>
+        </Grid>
 
         <Border Grid.Row="2" Grid.Column="0" Margin="1" BorderBrush="Black" BorderThickness="3"/>
         <Image Grid.Row="1" Grid.Column="1"
@@ -95,7 +130,7 @@
                    Source="{Binding CurrentLocation.BackgroundImage}"/>
         <Label Grid.Row="1" Grid.Column="1" Content="GAME MESSAGES" FontFamily="Felix Titling" FontSize="15" FontWeight="Bold"/>
         <Border Grid.Row="1" Grid.Column="1" Margin="1" BorderBrush="Black" BorderThickness="5"/>
-        
+
         <!-- Item and Action buttons -->
         <Grid Grid.Row="2" Grid.Column="1">
             <Grid.ColumnDefinitions>
@@ -105,10 +140,10 @@
 
             <Label Grid.Row="0" Grid.Column="0" Content="ACTIONS" FontFamily="Felix Titling" FontSize="15" FontWeight="Bold" Background="BurlyWood"/>
             <Border Grid.Row="0" Grid.Column="0" Margin="1" BorderBrush="Black" BorderThickness="3"/>
-            <Label Grid.Row="0" Grid.Column="1" Content="ITEMS" FontFamily="Felix Titling" FontSize="15" FontWeight="Bold" Background="BurlyWood"/>
+            <Label Grid.Row="0" Grid.Column="1" Content="ACTIVES" FontFamily="Felix Titling" FontSize="15" FontWeight="Bold" Background="BurlyWood"/>
             <Border Grid.Row="0" Grid.Column="1" Margin="1" BorderBrush="Black" BorderThickness="3"/>
-            
-            
+
+
             <Grid Grid.Row="0" Grid.Column="1">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
@@ -129,7 +164,7 @@
                    Width="Auto"
                    Source="{Binding CurrentGameItem.ImageName}"/>
                 <Border Grid.Row="1" Margin="1" BorderBrush="Black" BorderThickness="1"/>
-                
+
                 <Border Grid.Row="2" Margin="1" BorderBrush="Black" BorderThickness="1"/>
                 <Border Grid.Row="0" Grid.Column="1" Margin="1" BorderBrush="Black" BorderThickness="1"/>
                 <Image Grid.Row="0" Grid.Column="1"
@@ -138,7 +173,7 @@
                    Height="Auto"
                    Width="Auto"
                    Source="{Binding CurrentGameItem2.ImageName}"/>
-                
+
                 <Border Grid.Row="1" Grid.Column="1" Margin="1" BorderBrush="Black" BorderThickness="1"/>
                 <Border Grid.Row="2" Grid.Column="1" Margin="1" BorderBrush="Black" BorderThickness="1"/>
                 <Border Grid.Row="0" Grid.Column="3" Margin="1" BorderBrush="Black" BorderThickness="1"/>
@@ -158,30 +193,30 @@
             </Grid.RowDefinitions>
 
             <!-- Location Information -->
-                
-                <Grid Grid.Row="0" Grid.Column="0" Background="BurlyWood">
+
+            <Grid Grid.Row="0" Grid.Column="0" Background="BurlyWood">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
 
-            <Border Grid.Row="0" Margin="3" BorderBrush="Black" BorderThickness="1">
-                <TextBlock Grid.Row="0"
+                <Border Grid.Row="0" Margin="3" BorderBrush="Black" BorderThickness="1">
+                    <TextBlock Grid.Row="0"
                    HorizontalAlignment="Center"
                    FontFamily="Felix Titling" FontSize="15" FontWeight="Bold"
                    Text="{Binding CurrentLocation.Name}"/>
-            </Border>
+                </Border>
 
-                
-            <Image Grid.Row="1"
+
+                <Image Grid.Row="1"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
                    Height="Auto"
                    Width="Auto"
                    Source="{Binding CurrentLocation.ImageName}"/>
 
-            <TextBlock Grid.Row="2"
+                <TextBlock Grid.Row="2"
                        FontFamily="Felix Titling" FontSize="15"
                        HorizontalAlignment="Center"
                        VerticalAlignment="Center"
