@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aaron\\Documents\\School\\CC3\\1TEAMGYATT - Copy\\Engine\\Engine.csproj",
+      "projectUniqueName": "C:\\Users\\Aaron\\Downloads\\testgame\\Engine\\Engine.csproj",
       "projectName": "Engine",
-      "projectPath": "C:\\Users\\Aaron\\Documents\\School\\CC3\\1TEAMGYATT - Copy\\Engine\\Engine.csproj",
+      "projectPath": "C:\\Users\\Aaron\\Downloads\\testgame\\Engine\\Engine.csproj",
       "packagesPath": "C:\\Users\\Aaron\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aaron\\Documents\\School\\CC3\\1TEAMGYATT - Copy\\Engine\\obj\\",
+      "outputPath": "C:\\Users\\Aaron\\Downloads\\testgame\\Engine\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Aaron\\AppData\\Roaming\\NuGet\\NuGet.Config",

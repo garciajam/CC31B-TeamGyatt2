@@ -10,9 +10,15 @@ namespace Engine.Factories
         static TraderFactory()
         {
             Trader mysterious = new Trader("Mysterious Trader");
-            mysterious.AddItemToInventory(ItemFactory.CreateGameItem(3001));
-            mysterious.AddItemToInventory(ItemFactory.CreateGameItem(3002));
-            mysterious.AddItemToInventory(ItemFactory.CreateGameItem(3003));
+
+            for (int x = 0; x < 50; x++)
+            {
+                mysterious.AddItemToInventory(ItemFactory.CreateGameItem(3001));
+                mysterious.AddItemToInventory(ItemFactory.CreateGameItem(3002));
+                mysterious.AddItemToInventory(ItemFactory.CreateGameItem(3003));
+            }
+
+            
             Trader mystical = new Trader("Mystical Merchant");
             mystical.AddItemToInventory(ItemFactory.CreateGameItem(1008));
             mystical.AddItemToInventory(ItemFactory.CreateGameItem(1009));

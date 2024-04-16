@@ -107,7 +107,7 @@ namespace Engine.ViewModels
             CurrentPlayer = new Player("Jamal", "Fighter", 0, 10, 10, 10, "pack://application:,,,/Engine;component/Images/Player/player.png");
             if (!CurrentPlayer.Weapons.Any())
             {
-                CurrentPlayer.AddItemToInventory(ItemFactory.CreateGameItem(1007));
+                CurrentPlayer.AddItemToInventory(ItemFactory.CreateGameItem(1001));
             }
             CurrentPlayer.AddItemToInventory(ItemFactory.CreateGameItem(2001));
             CurrentPlayer.LearnRecipe(RecipeFactory.RecipeByID(1));

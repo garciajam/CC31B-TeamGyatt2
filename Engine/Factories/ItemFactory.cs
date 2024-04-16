@@ -14,7 +14,7 @@ namespace Engine.Factories
         static ItemFactory()
         {
             BuildWeapon(1001, "Attack Stick", 0, "pack://application:,,,/Engine;component/Images/Items/stick.png", 0, 3);
-            BuildWeapon(1002, "Leaf Sword", 10, "pack://application:,,,/Engine;component/Images/Items/leafsword.png", 1, 5);
+            BuildWeapon(1002, "Leaf Sword", 10, "pack://application:,,,/Engine;component/Images/Items/leafsword.png", 1, 4);
             BuildWeapon(1003, "Fire Sword", 50, "pack://application:,,,/Engine;component/Images/Items/firesword.png", 1, 10);
             BuildWeapon(1004, "Fire Gauntlet", 150, "pack://application:,,,/Engine;component/Images/Items/firegauntlet.png", 1, 25);
             BuildWeapon(1005, "Water Magic", 0, "pack://application:,,,/Engine;component/Images/Items/watermagic.png", 5, 20);
@@ -24,15 +24,15 @@ namespace Engine.Factories
             BuildWeapon(1009, "Mystical Amulet", 200, "pack://application:,,,/Engine;component/Images/Items/mysticalamulet.png", 3, 13);
             BuildWeapon(1010, "Mystical Glove", 200, "pack://application:,,,/Engine;component/Images/Items/mysticalglove.png", 6, 10);
 
-            BuildWeapon(1501, "Weak Magical Stick", 0, "pack://application:,,,/Engine;component/Images/Items/stick.png", 0, 1);
-            BuildWeapon(1502, "Dark Club", 0, "pack://application:,,,/Engine;component/Images/Items/stick.png", 0, 4);
-            BuildWeapon(1503, "Fire Breath", 0, "pack://application:,,,/Engine;component/Images/Items/stick.png", 0, 8);
-            BuildWeapon(1504, "Water Blast", 0, "pack://application:,,,/Engine;component/Images/Items/stick.png", 0, 6);
-            BuildWeapon(1505, "Wrath of the Fire Dragon", 0, "pack://application:,,,/Engine;component/Images/Items/stick.png", 0, 20);
-            BuildWeapon(1506, "Haunt", 0, "pack://application:,,,/Engine;component/Images/Items/stick.png", 0, 6);
-            BuildWeapon(1507, "Ancient Guardian", 0, "pack://application:,,,/Engine;component/Images/Items/stick.png", 0, 20);
+            BuildWeapon(1501, "Weak Magical Stick", 0, "villainitem", 0, 2);
+            BuildWeapon(1502, "Dark Club", 0, "villainitem", 0, 3);
+            BuildWeapon(1503, "Fire Breath", 0, "villainitem", 1, 5);
+            BuildWeapon(1504, "Water Blast", 0, "villainitem", 4, 12);
+            BuildWeapon(1505, "Wrath of the Fire Dragon", 0, "villainitem", 5, 15);
+            BuildWeapon(1506, "Haunt", 0, "villainitem", 1, 6);
+            BuildWeapon(1507, "Ancient Guardian", 0, "villainitem", 10, 15);
 
-            BuildHealingItem(2001, "Potion", 5, 2, "pack://application:,,,/Engine;component/Images/Items/potion.png");
+            BuildHealingItem(2001, "Potion", 5, 5, "pack://application:,,,/Engine;component/Images/Items/potion.png");
 
             BuildMiscellaneousItem(2501, "Imp Essence", 10, "collectibleonly");
             BuildMiscellaneousItem(2502, "Lava Golem Core", 50, "collectibleonly");

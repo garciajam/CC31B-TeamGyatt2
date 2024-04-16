@@ -150,7 +150,7 @@
         <Border Grid.Row="1" Grid.Column="1" Margin="1" BorderBrush="Black" BorderThickness="3">
             <RichTextBox x:Name="GameMessages"
                              Background="Beige"
-                             VerticalScrollBarVisibility="Auto"
+                             VerticalScrollBarVisibility="Hidden"
                          FontFamily="Felix Titling"
                          FontSize="15"
                          FontWeight="Black">
